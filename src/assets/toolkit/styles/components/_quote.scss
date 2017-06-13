@@ -1,0 +1,100 @@
+/* Let's set and reset some common styles */
+.mb-wrap {
+	width: 300px;
+	margin: 20px auto;
+	padding: 20px;
+	position: relative;
+}
+
+.mb-wrap p{
+	margin: 0;
+	padding: 0;
+}
+
+.mb-wrap blockquote {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+
+.mb-style-3 {
+	width: 500px;
+}
+
+.mb-style-3 blockquote{
+	background: lighten($color-brand-highlight,22);
+	padding: 30px;
+  border-top: 2px solid transparent;
+  border-image: url(../images/border.png) 6;
+	box-shadow: $box-shadow;
+}
+
+.mb-style-3 blockquote:after,
+.mb-style-3 blockquote:before  {
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.mb-style-3 blockquote:after  {
+	border-top-color: lighten($color-brand-highlight,22);
+	border-width: 10px;
+	left: 65%;
+	margin-left: -10px;
+}
+
+.mb-style-3 blockquote:before {
+	border-top-color: rgba(0,0,0,0.01);
+	border-width: 11px;
+	left: 65%;
+	margin-left: -11px;
+}
+
+.mb-style-3 blockquote p {
+	font-weight: 300;
+	line-height: 1.57;
+  font-size: 1.4em;
+	padding-left: 80px;
+	position: relative;
+  color: $color-text;
+  font-style: italic;
+}
+
+.mb-style-3 blockquote p:before{
+	content: '\201C';
+	font-style: normal;
+	font-weight: 700;
+	position: absolute;
+	font-size: 175px;
+  line-height: 175px;
+  display: block;
+	top: -60px;
+	left: -22px;
+	text-shadow: 7px 6px 6px rgba(0, 0, 0, 0.1);
+  @extend .gold-text;
+
+}
+
+.mb-style-3 .mb-attribution {
+	text-align: right;
+	padding: 20px;
+	position: relative;
+}
+
+.mb-style-3 .mb-thumb {
+	display: block;
+	width: 120px;
+	height: 120px;
+	border: 5px solid $color-gold;
+  border-radius: 50%;
+  z-index: 1;
+	box-shadow:
+		inset 1px 1px 4px rgba(0,0,0,0.5),
+		0 2px 3px rgba(0,0,0,0.6);
+  img { width: 100%; position: relative;}
+}

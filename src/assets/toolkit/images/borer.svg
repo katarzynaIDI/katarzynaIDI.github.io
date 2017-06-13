@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st1{clip-path:url(#SVGID_2_);}
+	.st2{clip-path:url(#SVGID_4_);}
+</style>
+<rect class="st0" width="300" height="300"/>
+<rect x="5.6" y="5.6" class="st0" width="288.7" height="288.7"/>
+<rect x="328.8" y="-3.1" class="st0" width="0" height="0.4"/>
+<rect x="313.3" y="355.3" class="st0" width="0" height="0.4"/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="175.4" y="234.6" width="119.9" height="59.1"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st1">
+		<polygon class="st0" points="288,284.1 294,287.6 294,270.2 294,252.9 288,256.3 		"/>
+		<polygon class="st0" points="279.3,247.6 263.6,256.6 269.8,260.2 295,245.8 295,238.6 		"/>
+		<polygon class="st0" points="283,282.1 283,274.9 257.8,260.5 251.6,264.1 267.3,273.1 		"/>
+		<polygon class="st0" points="249,300.2 249,317.6 255,314.1 255,286.3 249,282.8 		"/>
+		<polygon class="st0" points="274.2,290.1 280.4,286.5 264.7,277.5 249,268.5 249,275.7 		"/>
+		<polygon class="st0" points="261,304.8 261,312.1 276.7,303.1 292.4,294.1 286.2,290.4 		"/>
+		<polygon class="st0" points="238,314 244,317.4 244,300.1 244,282.7 238,286.2 		"/>
+		<polygon class="st0" points="212.6,286.4 218.8,290 244,275.6 244,268.4 228.3,277.4 		"/>
+		<polygon class="st0" points="206.8,290.3 200.6,293.9 216.3,302.9 232,312 232,304.7 		"/>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_3_" x="5.6" y="5.6" width="107.1" height="60.7"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st2">
+		<g>
+			<polygon class="st0" points="12,44.5 6,48 6,30.6 6,13.2 12,16.7 			"/>
+			<g>
+				<polygon class="st0" points="31.2,40.6 37.4,44.3 21.7,53.3 6,62.3 6,55.1 				"/>
+			</g>
+			<g>
+				<polygon class="st0" points="43.2,40.4 49.4,36.7 33.7,27.7 18,18.7 18,25.9 				"/>
+			</g>
+		</g>
+		<g>
+			<polygon class="st0" points="45,14.6 51,18 51,0.6 51,-16.7 45,-13.3 			"/>
+			<g>
+				<polygon class="st0" points="25.8,10.7 19.6,14.3 35.3,23.3 51,32.3 51,25.1 				"/>
+			</g>
+			<g>
+				<polygon class="st0" points="13.8,10.4 7.6,6.8 23.3,-2.2 39,-11.2 39,-4 				"/>
+			</g>
+		</g>
+		<g>
+			<polygon class="st0" points="62,14.7 56,18.1 56,0.8 56,-16.6 62,-13.1 			"/>
+			<g>
+				<polygon class="st0" points="81.2,10.8 87.4,14.4 71.7,23.4 56,32.4 56,25.2 				"/>
+			</g>
+			<g>
+				<polygon class="st0" points="93.2,10.5 99.4,6.9 83.7,-2.1 68,-11.1 68,-3.9 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

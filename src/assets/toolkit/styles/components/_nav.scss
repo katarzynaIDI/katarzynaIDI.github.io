@@ -1,0 +1,226 @@
+.cn-button {
+  position: relative;
+  left:56px;
+	z-index: 201;
+	width: 106px;
+	height: 106px;
+  line-height: 103px;
+	border: none;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	cursor: pointer;
+  background: $bg repeat;
+  -webkit-backface-visibility: hidden;
+  padding:0;
+  border:16px solid #fff;
+  box-sizing: content-box;
+  pointer-events: all;
+  outline: none;
+  transition: border-width .5s ease;
+  @media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  left: 24px;
+  top: -13px;
+}
+  .svg--faded & {
+    border-width: 6px;
+  }
+  &__overlay {
+    position: fixed;
+    z-index: 200;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba(#000,.3);
+    &--closed {
+      background: transparent;
+      z-index: 0;
+      pointer-events: none;
+    }
+  }
+  &__menu, &__menu--close {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 202;
+    font-weight: 900;
+    font-size: 1.5em;
+  }
+  &__menu--close { display: none;}
+  svg {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 100px;
+    path, line {
+      stroke-width: 4px;
+      stroke: #000;
+    }
+  }
+}
+
+
+.nav__wrapper {
+  position: fixed;
+  top: 23px;
+  bottom: 23px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 300;
+  pointer-events: none;
+  .overlay-visible & { pointer-events: all;}
+}
+
+.cn-wrapper {
+	position: absolute;
+	top: 100px;
+	left: 50%;
+  margin-left: -281px;
+  z-index: 310;
+	width: 562px;
+	height: 562px;
+	border-radius: 50%;
+	background: transparent;
+	opacity: 0;
+	transition: all .3s ease 0.3s;
+	transform: scale(0.1);
+	pointer-events: none;
+}
+
+/*cover to prevent extra space of anchors from being clickable*/
+ .cn-wrapper:after{
+  content:".";
+  display:block;
+  font-size:2em;
+  width:6.2em;
+  height:6.2em;
+  position: absolute;
+  left: 50%;
+  margin-left: -3.1em;
+  top:50%;
+  margin-top: -3.1em;
+  border-radius: 50%;
+  z-index:310;
+  color: transparent;
+}
+
+ .opened-nav {
+	opacity: 1;
+	transition: all .3s ease;
+	transform: scale(1);
+	pointer-events: auto;
+}
+
+ .cn-wrapper li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 290px;
+	height: 290px;
+	font-size: 1.5em;
+	transition: all .3s ease;
+	transform: rotate(76deg) skew(60deg);
+	transform-origin: 100% 100%;
+	pointer-events: none;
+
+}
+
+
+ .cn-wrapper li a {
+  @extend %heading--lowercase;
+	position: absolute;
+	right: -7.25em;
+	bottom: -7.25em;
+	display: block;
+	width: 14.5em;
+	height: 14.5em;
+	border-radius: 50%;
+	background: $color-highlight;
+	background: radial-gradient(transparent 25.5%, $color-highlight 26%);
+	color: #a37748;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5em;
+	line-height: 1.4;
+	transform: skew(-60deg) rotate(-75deg) scale(1);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	pointer-events: auto;
+  border: 3px solid currentColor;
+  trnsition: color .2s ease;
+}
+
+.cn-wrapper li:nth-child(even) a {
+  background: darken($color-highlight, 3);
+	background: radial-gradient(transparent 25.5%, darken($color-highlight, 3) 26%);
+}
+ .cn-wrapper li a span {
+	position: relative;
+  top: 12px;
+	display: block;
+	font-size: .65em;
+}
+
+ .cn-wrapper li a:hover,
+ .cn-wrapper li a:active,
+ .cn-wrapper li a:focus {
+	 color: lighten(saturate(#a37748, 20%), 10);
+
+}
+ .cn-wrapper li a:focus {
+    position: fixed; /* fix the displacement bug in webkit browsers when using tab key */
+}
+
+ .opened-nav li {
+	transition: all .3s ease .3s;
+}
+
+ .opened-nav li:first-child {
+	transform: rotate(-20deg) skew(60deg);
+}
+
+ .opened-nav li:nth-child(2) {
+	transform: rotate(12deg) skew(60deg);
+}
+
+ .opened-nav  li:nth-child(3) {
+	transform: rotate(44deg) skew(60deg);
+}
+
+ .opened-nav li:nth-child(4) {
+	transform: rotate(76deg) skew(60deg);
+}
+
+ .opened-nav li:nth-child(5) {
+	transform: rotate(108deg) skew(60deg);
+}
+
+ .opened-nav li:nth-child(6) {
+	transform: rotate(140deg) skew(60deg);
+}
+
+ .opened-nav li:nth-child(7) {
+	transform: rotate(172deg) skew(60deg);
+}
+
+.overlay-visible {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+body {background:#fff;}

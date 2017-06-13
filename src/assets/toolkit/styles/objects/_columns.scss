@@ -1,0 +1,41 @@
+$base-spacing-unit: 24px;
+/**
+ * Create vendor-prefixed CSS in one go, e.g.
+ *
+   `@include vendor(border-radius, 4px);`
+ *
+ */
+@mixin vendor($property, $value...){
+    -webkit-#{$property}:$value;
+       -moz-#{$property}:$value;
+        -ms-#{$property}:$value;
+         -o-#{$property}:$value;
+            #{$property}:$value;
+}
+
+
+/*------------------------------------*\
+    $COLUMNS
+\*------------------------------------*/
+/**
+ * Here we can set elements in columns of text using CSS3, e.g.:
+ *
+   <p class=text-cols--2>
+ *
+ * Demo: jsfiddle.net/inuitcss/E26Yd
+ *
+ */
+%text-cols{
+    @include vendor(column-gap, $base-spacing-unit);
+}
+.text-cols--2    { @extend %text-cols; @include vendor(column-count, 2); }
+
+.justify {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  direction: ltr;
+  @include inuit-font-size(12px, 1.57);
+}

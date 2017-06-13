@@ -1,0 +1,309 @@
+---
+people:
+- title: Chengzu of the Ming
+  name: Emperor Yongle
+  date: r. 1402-1424
+  datadate: 01/01/2001
+  quote: I ordered The Forbidden City to be built.
+  image: emperor1
+- title: Renzong of the Ming
+  name: Emperor Hongxi
+  date: r. 1424-1425
+  datadate: 01/01/2002
+  quote: I was on the throne for eight months
+  image: emperor2
+- title: Xuangzong of the Ming
+  name: Emperor Xuande
+  date: r. 1425-1435
+  datadate: 01/01/2003
+  quote: Crickets were my hobby
+  image: emperor3
+- title: Yingzong of the Ming
+  name: Emperor Zhengtong
+  date: r. 1433-1449
+  datadate: 01/01/2004
+  quote: I was captured during a battle and after seven years I was restored back
+    to the throne and given a name of Yingzong of the Ming.
+  image: emperor4
+- title: Dalzong of the Ming
+  name: Emperor Jingtai
+  date: r. 1449-1464
+  datadate: 01/01/2005
+  quote: I substituted for Yinzong for seven years.
+  image: emperor5
+- title: Xianzong of the Ming
+  name: Emperor Chenghua
+  date: r. 1464-1487
+  datadate: 01/01/2006
+  quote: I was a weakling whose hands were tied.
+  image: emperor6
+- title: Xiaozong of the Ming
+  name: Emperor Hongzhi
+  date: r. 1487-1505
+  datadate: 01/01/2007
+  quote: I was a wise ruler who restored glory to the ming empire.
+  image: emperor7
+- title: Wuzong of the Ming
+  name: Emperor Zhengde
+  date: r. 1505-1521
+  datadate: 01/01/2008
+  quote: I was a fiasco!
+  image: emperor8
+- title: Shizong of the Ming
+  name: Emperor Jiajing
+  date: r. 1521-1567
+  datadate: 01/01/2009
+  quote: I was crazy about construction projects.
+  image: emperor9
+- title: Muzong of the Ming
+  name: Emperor Longqing
+  date: r. 1567-1572
+  datadate: 01/01/2010
+  quote: I was entirely unaccomplished.
+  image: emperor10
+- title: Shenzong of the Ming
+  name: Emperor Taichang
+  date: r. 1620
+  datadate: 01/01/2011
+  quote: I was on the throne for one month
+  image: emperor11
+- title: Xizong of the Ming
+  name: Emperor Tianqi
+  date: r. 1620-1627
+  datadate: 01/01/2012
+  quote: Carpentry was my only interest.
+  image: emperor12
+- title: Sizong of the Ming
+  name: Emperor Chonzgzhen
+  date: r. 1627-1644
+  datadate: 01/01/2013
+  quote: I lost the throne and hanged myself.
+  image: emperor13
+- title: Shizu of the Qing
+  name: Emperor Shunzhi
+  date: r. 1643-1661
+  datadate: 01/01/2014
+  quote: After the Manchus coenquered China in 1644, we established Qing dynasty.
+    All of the Qing emperors lived in The Forbidden City.
+  image: emperor14
+- title: Shengzu of the Quing
+  name: Emperor Kangxi
+  date: r. 1662-1722
+  datadate: 01/01/2015
+  quote: The Golden Age of the Qing Dynasty started during my reign.
+  image: emperor15
+- title: Shizong of the Qing
+  name: Emperor Yongzheng
+  date: r. 1722-1735
+  datadate: 01/01/2016
+  quote: I ruled with diligence and hard work.
+  image: emperor16
+- title: Gaozong od the Qing
+  name: Emperor Qianlong
+  date: r. 1736-1796
+  datadate: 01/01/2017
+  quote: During my reign the Qing dynasty reached its pinnacle.
+  image: emperor17
+- title: Renzong of the Qing
+  name: Emperor Jianqing
+  date: r. 1796-1820
+  datadate: 01/01/2018
+  quote: My reign was the beginning of the decline.
+  image: emperor18
+- title: Xuanzong of the Qing
+  name: Emperor Daoguang
+  date: r. 1820-1850
+  datadate: 01/01/2019
+  quote: I was a frugal and common ruler.
+  image: emperor19
+- title: Wenzong of the Qing
+  name: Emperor Xianfeng
+  date: r. 1850-1861
+  datadate: 01/01/2020
+  quote: The Taiping Rebelion erupted during my reign.
+  image: emperor20
+- title: Muzong of the Qing
+  name: Emperor Tongzhi
+  date: r. 1861-1875
+  datadate: 01/01/2021
+  quote: I was a puppet of the Empress Dowagers.
+  image: emperor21
+- title: Denzong of the Qing
+  name: Emperor Guangxu
+  date: r. 1875-1908
+  datadate: 01/01/2022
+  quote: My desire for reform waws never realized.
+  image: emperor22
+- title: Puyi of the Qing
+  name: Emperor Xuantong
+  date: r. 1908-1911
+  datadate: 01/01/2023
+  quote: I was the last of the Qing dynasty.
+  image: emperor23
+---
+<main class="main">
+
+	{{> nav-altered}} {{> emperors-alt}}
+
+
+
+  <div id="frst-carousel" class="frst-container container frst-carousel u-margin-top-huge">
+         <div class="frst-timeline-style-17 u-padding-top-huge">
+ 	<div class="timeline">
+ 		<div class="events-wrapper">
+ 			<div class="events">
+ 				<ol class="o-list-bare u-padding-none">
+          {{#each people}}
+            {{#unless @index}}<li><a href="#0" data-date="{{datadate}}" class="selected">{{date}}</a></li>{{/unless}}
+            {{#if @index}}<li><a href="#0" data-date="{{datadate}}">{{date}}</a></li>{{/if}}
+          {{/each}}
+ 				</ol>
+
+ 				<span class="filling-line" aria-hidden="true"></span>
+ 			</div> <!-- .events -->
+ 		</div> <!-- .events-wrapper -->
+
+ 		<ul class="frst-timeline-navigation o-list-bare u-padding-none">
+ 			<li>
+        <a href="#0" class="prev inactive ">
+          <div class="svg-wrapper gold-fill">
+
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 viewBox="0 0 66.3 98" style="enable-background:new 0 0 66.3 98;" xml:space="preserve">
+            <style type="text/css">
+            	.arrow-left{clip-path:url(#SVGID_2_);}
+            </style>
+            <g>
+            	<defs>
+
+            			<rect id="SVGID_1a_" x="14.1" y="14.3" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 117.4098 48.823)" width="68.9" height="68.9"/>
+            	</defs>
+            	<clipPath id="SVGID_2a_">
+            		<use xlink:href="#SVGID_1a_"  style="overflow:visible;"/>
+            	</clipPath>
+            	<g class="arrow-left">
+            		<g>
+            			<g>
+            				<line class="" x1="49.1" y1="90" x2="49.2" y2="90"/>
+            				<polyline class="" points="49.1,97.1 26.5,74.5 52,49 26.5,23.6 48.9,1.2 49.1,8 33.6,23.6 59,49 33.6,74.5 49.1,90 				"/>
+            				<line class="" x1="49.3" y1="8.2" x2="49.1" y2="8"/>
+            				<line class="" x1="48.9" y1="1.2" x2="49.1" y2="0.9"/>
+            			</g>
+            		</g>
+            		<g>
+            			<g>
+            				<path class="" d="M30,65.3l-6.4,6.4L1,49l22.6-22.6l6.4,6.4l19.1-19.1l16.3,16.3L46.3,49l19.1,19.1L49.1,84.4L30,65.3z
+            					 M42.8,52.6l-9.2,9.2l15.6,15.6l9.2-9.2L42.8,52.6z M13.8,49l12.7-12.7l-2.8-2.8L8.1,49l15.6,15.6l2.8-2.8L13.8,49z M30,39.8
+            					L20.8,49l9.2,9.2l9.2-9.2L30,39.8z M49.1,20.7L33.6,36.3l9.2,9.2l15.6-15.6L49.1,20.7z"/>
+            			</g>
+            		</g>
+            	</g>
+            </g>
+            </svg>
+          </div>
+        </a>
+      </li>
+ 			<li>
+        <a href="#0" class="next">
+            <div class="svg-wrapper gold-fill">
+
+
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      	 viewBox="0 0 66.3 98" style="enable-background:new 0 0 66.3 98;" xml:space="preserve">
+                      <style type="text/css">
+                      	.arrow-right{clip-path:url(#SVGID_2b_);}
+                      </style>
+                      <g>
+                      	<defs>
+
+                      			<rect id="SVGID_1b_" x="-16.9" y="14.3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 39.6088 1.8317)" width="68.9" height="68.9"/>
+                      	</defs>
+                      	<clipPath id="SVGID_2b_">
+                      		<use xlink:href="#SVGID_1b_"  style="overflow:visible;"/>
+                      	</clipPath>
+                      	<g class="arrow-right">
+                      		<g>
+                      			<g>
+                      				<line class="" x1="17.1" y1="90" x2="17" y2="90"/>
+                      				<polyline class="" points="17.1,97.1 39.7,74.5 14.2,49 39.7,23.6 17.3,1.2 17.1,8 32.6,23.6 7.2,49 32.6,74.5 17.1,90
+                      					"/>
+                      				<line class="" x1="17.1" y1="8" x2="16.9" y2="8.2"/>
+                      				<line class="" x1="17.1" y1="0.9" x2="17.3" y2="1.2"/>
+                      			</g>
+                      		</g>
+                      		<g>
+                      			<g>
+                      				<path class="" d="M17.1,84.4L0.8,68.1L19.9,49L0.8,29.9l16.3-16.3l19.1,19.1l6.4-6.4L65.1,49L42.5,71.7l-6.4-6.4L17.1,84.4z
+                      					 M7.9,68.1l9.2,9.2l15.6-15.6l-9.2-9.2L7.9,68.1z M39.7,61.8l2.8,2.8L58.1,49L42.5,33.5l-2.8,2.8L52.4,49L39.7,61.8z M27,49
+                      					l9.2,9.2l9.2-9.2l-9.2-9.2L27,49z M7.9,29.9l15.6,15.6l9.2-9.2L17.1,20.7L7.9,29.9z"/>
+                      			</g>
+                      		</g>
+                      	</g>
+                      </g>
+                      </svg>
+            </div>
+        </a>
+      </li>
+ 		</ul> <!-- .frst-timeline-navigation -->
+ 	</div> <!-- .timeline -->
+
+ 	<div class="events-content">
+ 		<ol class="o-list-bare u-padding-none">
+      {{#each people}}
+        {{#unless @index}}
+          <li data-date="{{datadate}}" class="selected">
+              <article class="emperor u-padding-left-large u-padding-right-large">
+                <div class="mb-wrap mb-style-3">
+        					<blockquote>
+        						<p>{{quote}}</p>
+        					</blockquote>
+        					<div class="mb-attribution">
+                    <div class="o-pack o-pack--auto o-pack--middle u-1/1">
+                      <div class="o-pack__item u-1/1">
+                        <h2 class="mb-author article__title gold-text o-block__body u-margin-bottom-small u-margin-top-none">{{name}}</h2>
+            						<span class="o-bock__body">{{title}}</small>
+                      </div>
+                      <div class="o-pack__item u-padding-left">
+                        <div class="mb-thumb">
+                            <img class="o-block__body emperor__image" src="../assets/toolkit/images/{{image}}.png" alt=""/>
+                        </div>
+                      </div>
+                    </div>
+        					</div>
+        				</div>
+            </article>
+          </li>
+        {{/unless}}
+        {{#if @index}}
+          <li data-date="{{datadate}}">
+            <article class="emperor u-padding-left-large u-padding-right-large">
+              <div class="mb-wrap mb-style-3">
+                <blockquote>
+                  <p>{{quote}}</p>
+                </blockquote>
+                <div class="mb-attribution">
+                  <div class="o-pack o-pack--auto o-pack--middle u-1/1">
+                    <div class="o-pack__item u-1/1">
+                      <h2 class="mb-author article__title gold-text o-block__body u-margin-bottom-small u-margin-top-none">{{name}}</h2>
+                      <span class="o-bock__body">{{title}}</small>
+                    </div>
+                    <div class="o-pack__item u-padding-left">
+                      <div class="mb-thumb">
+                          <img class="o-block__body emperor__image" src="../assets/toolkit/images/{{image}}.png" alt=""/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </article>
+          </li>
+        {{/if}}
+      {{/each}}
+ 		</ol>
+ 	</div> <!-- .events-content -->
+ </div>
+             <!-- frst-timeline -->
+         </div>
+
+{{> readmore3}}
+</main>

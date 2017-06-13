@@ -1,0 +1,39 @@
+
+.link--simple {
+  text-decoration: none;
+  color: inherit;
+
+  @include hocus {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+
+.link {
+  font-weight: 700;
+  color: $color-link;
+  @include hocus {
+    color: $color-link-hover;
+  }
+}
+
+
+.berlitz {
+  &__wrapper {
+    position: fixed;
+    top: 63px;
+    text-align: right;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  width: 120px;
+  height: 33px;
+  margin-right: 56px;
+  pointer-events: none;
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px) {
+    margin-right: 24px;
+  }
+}

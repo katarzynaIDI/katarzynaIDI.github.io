@@ -1,5 +1,0 @@
-@mixin hocus {
-    &:hover, &:active, &:focus {
-        @content;
-    }
-}

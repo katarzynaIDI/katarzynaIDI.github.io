@@ -31,8 +31,7 @@
     width: 140px;
     height: 140px;
     padding: 8px;
-    border: 3px solid transparent;
-    border-image: url(../images/border.png) 6;
+    border: 3px solid $color-gold;
     box-shadow: $box-shadow;
     margin: -8px 20px 8px -15px;
   }

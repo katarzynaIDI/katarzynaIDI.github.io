@@ -17,12 +17,10 @@
   }
 }
 .gold-fill {
-  background: $bg repeat;
+  background: #fff;
   svg {
-    background: #fff;
-    mix-blend-mode: lighten;
-    path {
-      fill: #000;
+    path, line,polyline {
+      fill: $color-gold;
     }
   }
 

@@ -31,7 +31,8 @@ var config = {
 			toolkit: 'src/assets/toolkit/styles/toolkit.scss'
 		},
 		images: 'src/assets/toolkit/images/**/*',
-		views: 'src/toolkit/views/*.html'
+		views: 'src/toolkit/views/*.html',
+		fonts: 'src/assets/toolkit/fonts/**/*'
 	},
 	dest: 'dist'
 };
@@ -72,7 +73,13 @@ gulp.task('styles:toolkit', function () {
 		.pipe(gulpif(config.dev, reload({stream:true})));
 });
 
-gulp.task('styles', ['styles:fabricator', 'styles:toolkit']);
+gulp.task('fonts', function () {
+	gulp.src(config.src.fonts)
+		.pipe(gulp.dest(config.dest + '/assets/toolkit/fonts'))
+});
+
+
+gulp.task('styles', ['styles:fabricator', 'styles:toolkit', 'fonts']);
 
 
 // scripts

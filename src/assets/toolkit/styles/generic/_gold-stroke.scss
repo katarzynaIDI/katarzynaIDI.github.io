@@ -1,37 +1,22 @@
-.gold-stroke {
-  background: $bg repeat;
-  svg {
-    background: #fff;
-    mix-blend-mode: lighten;
+.gold-stroke,
+.jumbotron__animation {
     path {
-      stroke: #000;
+      stroke: $color-gold;
       stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;
       fill: none;
     }
-
-    .svg--fade & {
-      mix-blend-mode: normal;
-      background: transparent;
-      path { stroke: #ffffff !important;}
-    }
-  }
-
 }
 
 .jumbotron__pattern-gold {
-  background: $bg repeat;
   svg {
-    background: #fff;
-    mix-blend-mode: lighten;
-    path {
-      stroke: #000;
+    path, polygon {
+      stroke: $color-gold;
       stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;
       fill: none;
     }
   }
 }
 .gold-fill {
-
   background: $bg repeat;
   svg {
     background: #fff;

@@ -23,7 +23,6 @@
 			bottom:0;
 			top: 0;
 			overflow: hidden;
-			opacity:0;
 			&:after {
 				content: '';
 		    position: absolute;
@@ -46,19 +45,14 @@
   &__animation {
     display: block;
 		opacity: 1;
-		path {
-			stroke: transparent;
-			fill: none;
-		}
     &-wrapper {
       position: absolute;
       top: 0;
       left: -1px;
       right: -1px;
       bottom: 0;
-			transition: opacity .2s linear;
-			transition-delay: .2s;
 			overflow: hidden;
+			background: #fff;
 			&--fade {
 				opacity: 0;
 			}

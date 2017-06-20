@@ -12,7 +12,7 @@
 	font-size: 12px;
 	text-transform: uppercase;
 	cursor: pointer;
-  background: $bg repeat;
+  background: #fff;
   -webkit-backface-visibility: hidden;
   padding:0;
   border:16px solid #fff;
@@ -51,6 +51,7 @@ and (max-device-width : 1024px) {
     z-index: 202;
     font-weight: 900;
     font-size: 1.5em;
+    color: $color-gold;
   }
   &__menu--close { display: none;}
   svg {
@@ -61,9 +62,10 @@ and (max-device-width : 1024px) {
     transform: translate(-50%,-50%);
     width: 100px;
     height: 100px;
+    border: 4px solid lighten($color-gold, .5);
     path, line {
       stroke-width: 4px;
-      stroke: #000;
+      stroke: $color-gold;
     }
   }
 }

@@ -66,18 +66,20 @@ $(function(){
 			    ]
 			});
  }
+
+
+
+
 	var options = {
-		duration: 50,
+		duration: 100,
 		onReady: function(el) {
-			$(el.parentEl.closest('.jumbotron__animation-wrapper')).addClass('gold-stroke');
-			$(el.parentEl.closest('.jumbotron')).find('.jumbotron__background--wrapper').css('opacity','1');
 			setTimeout(loaderHandler,200);
 		}
 	}
 	var hideSVG = function(animation) {
 		var jumbo = $(animation.parentEl).closest('.jumbotron');
 
-		jumbo.find('.jumbotron__animation-wrapper').fadeOut(500, "easeOutCubic", function() {
+		jumbo.find('.jumbotron__animation-wrapper').fadeOut(20, "easeOutCubic", function() {
 			jumbo.addClass('svg--fade');
 			$('body').addClass('svg--faded');
 			jumbo.find('.jumbotron__pattern-gold').css('opacity', '0');
@@ -90,11 +92,11 @@ $(function(){
   }
   if ($('#svgForbiddencity').length>0) {
     var svgForbiddencity = new Vivus('svgForbiddencity', {
-				duration: 30,
+				duration: 100,
 				start: 'autostart',
 				onReady: function(el) {
-					$(el.parentEl.closest('.jumbotron__animation-wrapper')).addClass('gold-stroke');
-					$(el.parentEl.closest('.jumbotron')).find('.jumbotron__background--wrapper').css('opacity','1');
+					//$(el.parentEl.closest('.jumbotron__animation-wrapper')).addClass('gold-stroke');
+					//$(el.parentEl.closest('.jumbotron')).find('.jumbotron__background--wrapper').css('opacity','1');
 					setTimeout(loaderHandler,200);
 				}
 		}, hideSVG);

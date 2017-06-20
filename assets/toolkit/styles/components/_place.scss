@@ -1,0 +1,116 @@
+.place {
+  overflow: hidden;
+ &:nth-child(even) {
+   direction: rtl;
+   .place__pattern {
+     transform: scale(.6, .6);
+     transform-origin: top left;
+   }
+ }
+ &:nth-child(odd) {
+   .place__pattern {
+     transform: scale(-.6, .6) translateX(-170px);
+     transform-origin: top;
+   }
+ }
+  &__name {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right:0;
+      color: #fff;
+      text-shadow: 1px 1px 1px $color-gold;
+      z-index: 2;
+      direction: ltr;
+  		&:after {display: none;}
+  }
+  &__image {
+    height: 0;
+    padding-bottom: 100%;
+    box-sizing: content-box;
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      display: block;
+      background: rgba(0,0,0,0.2);
+      transition: opacity .4s ease;
+      opacity: 1;
+      z-index: 1;
+    }
+
+  }
+  &:hover {
+     .place__image:after {opacity: 0;}
+  }
+
+
+  &__description {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    direction: ltr;
+    @include inuit-font-size(12px, 1.57);
+    span {
+      @extend %heading--uppercase;
+      @extend .gold-text;
+      font-size: 6rem;
+line-height: 94px;
+letter-spacing: 1px;
+color: #4a4746;
+text-align: center;
+letter-spacing: 3px;
+position: relative;
+top: 2px;
+float: left;
+margin-right: 12px;
+margin-left: -12px;
+width: 112px;
+height: 112px;
+padding: 8px;
+text-indent: 3px;
+      border: 3px solid transparent;
+      border-image: url(../images/border.png) 6;
+      box-shadow: $box-shadow;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+
+        border: 2px solid transparent;
+        border-image: url(../images/border.png) 6;
+      }
+    }
+
+  }
+
+  // &__pattern {
+  //   width: 100%;
+  //   height: 100%;
+  // }
+  &__pattern {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    display: block;
+    overflow: hidden;
+    clip-path: polygon(100% 0, 0 100%, 0 0);
+    transform-origin: top left;
+    transform: scale(0.56);
+    z-index: 3
+  }
+
+}

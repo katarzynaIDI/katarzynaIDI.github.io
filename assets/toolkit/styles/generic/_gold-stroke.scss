@@ -1,0 +1,59 @@
+.gold-stroke,
+.jumbotron__animation {
+    path {
+      stroke: $color-gold;
+      stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;
+      fill: none;
+    }
+}
+
+.jumbotron__pattern-gold {
+  svg {
+    path, polygon {
+      stroke: $color-gold;
+      stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;
+      fill: none;
+    }
+  }
+}
+.gold-fill {
+  background: $bg repeat;
+  svg {
+    background: #fff;
+    mix-blend-mode: lighten;
+    path {
+      fill: #000;
+    }
+  }
+
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.icon-camera {
+  width: 1.3125em;
+}
+
+.map__wrapper {
+  position: relative;
+}
+
+.map {
+  display: block;
+}
+
+.pointer__wrapper {
+  position: absolute;
+      top: 41%;
+      left: 69%;
+      width: 40px;
+      height: 40px;
+      border-radius: 11px;
+      overflow: hidden;
+}

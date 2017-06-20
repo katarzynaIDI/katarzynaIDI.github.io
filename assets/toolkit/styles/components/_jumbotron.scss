@@ -1,0 +1,126 @@
+
+.jumbotron {
+	position: relative;
+	@extend %golden-ratio;
+	&__background {
+		overflow: hidden;
+		@extend %object-fit-cover;
+
+		&--history {
+			 width: auto;
+		}
+		&--emperors {
+			object-position: left -147px;
+		}
+		&--what-to-see {
+			width: 150%;
+			height: auto;
+		}
+		&--wrapper {
+			position: absolute;
+			left:0;
+			right:0;
+			bottom:0;
+			top: 0;
+			overflow: hidden;
+			&:after {
+				content: '';
+		    position: absolute;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    top: 0;
+		    display: block;
+		    background: rgba(0,0,0,0.2);
+				transition: opacity .4s ease;
+				opacity: 1;
+			}
+		}
+	}
+	&:hover {
+		.jumbotron__background--wrapper:after {
+			opacity: 0;
+		}
+	}
+  &__animation {
+    display: block;
+		opacity: 1;
+    &-wrapper {
+      position: absolute;
+      top: 0;
+      left: -1px;
+      right: -1px;
+      bottom: 0;
+			overflow: hidden;
+			background: #fff;
+			&--fade {
+				opacity: 0;
+			}
+
+    }
+
+  }
+
+	&__pattern {
+		width: 100%;
+		height: 100%;
+	}
+	&__pattern-wrapper {
+		position:absolute;
+		top:0;
+		bottom:0;
+		left: 0;
+		right: 0;
+		display: block;
+		overflow: hidden;
+		clip-path: polygon(100% 0, 0 100%, 0 0);
+		transform-origin: top left;
+		transform: scale(0.56);
+	}
+  &__link {
+    position: absolute;
+		right:20px;
+		bottom: -50px;
+		width: 50%;
+		display: block;
+		background: rgba(#fff,.9);
+		text-align: center;
+		border: 3px solid transparent;
+		border-image: url(../images/border.png) 6;
+		padding: 8px;
+		z-index: 3;
+		box-shadow: $box-shadow;
+		&--wide {
+			width: 66%;
+		}
+		&--left {
+			right: auto;
+			left:20px;
+		}
+		&--center {
+			left: 50%;
+			right: auto;
+			transform: translateX(-50%);
+			background: #fff;
+		}
+		> div {
+			border: 2px solid transparent;
+			border-image: url(../images/border.png) 6;
+			padding: 8px;
+		}
+		small {
+			text-transform: uppercase;
+		}
+  }
+
+}
+
+
+
+#svgForbiddencity path {
+    transform: translate(21px,11px);
+}
+
+#svgHistory {
+	transform: scaleX(1.1);
+}
